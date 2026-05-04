@@ -6,12 +6,15 @@
 
 * **Diplomacy Tactical OS:** A real-time tactical map overlay showing diplomatic relations, active battles, alliances, and enemies directly on the game engine.
 * **Organize Company:** A drag-and-drop utility to custom sort and organize your companies locally via native UI elements.
+* **Light Mode:** A smart visual toggle that cleanly inverts the game's dark theme while intelligently preserving images, maps, and some original native UI elements. (some elements becomes dull.)
 
 ## Demo
 ![Diplomacy Tactical OS](./assets/diplo-map.gif)
 *Real-time tactical overlay showing diplomatic relations and alliance mappings directly on the game engine.*
 ![Organize Company](./assets/organize-company.gif)
 *A drag-and-drop utility to custom sort and organize your companies locally via native UI elements.*
+![Light Mode](./assets/light-mode.png)
+*A crisp Light Mode that intelligently preserves map layers, media, and some original UI elements.*
 
 ## Installation (Chrome / Edge)
 
