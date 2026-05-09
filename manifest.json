@@ -6,19 +6,34 @@
   "content_scripts": [
     {
       "matches": ["*://app.warera.io/*"],
-      "js": ["ui.js"],
+      "js": [
+        "src/shared/constants.js",
+        "src/shared/events.js",
+        "src/ui/features/organize-company.js",
+        "src/ui/features/light-mode.js",
+        "src/ui/config.js",
+        "src/ui/settings-menu.js",
+        "src/ui/index.js"
+      ],
       "run_at": "document_idle"
     },
     {
       "matches": ["*://app.warera.io/*"],
-      "js": ["hook.js"],
+      "js": [
+        "src/shared/events.js",
+        "src/core/state.js",
+        "src/core/interceptors/fetch-hook.js",
+        "src/core/interceptors/webpack-hook.js",
+        "src/core/features/diplomacy.js",
+        "src/core/index.js"
+      ],
       "world": "MAIN",
       "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["naps.json"],
+      "resources": ["data/naps.json"],
       "matches": ["*://app.warera.io/*"]
     }
   ]
